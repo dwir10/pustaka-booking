@@ -87,7 +87,7 @@ $autoload['drivers'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['helper'] = array('url', 'file');
+|	$autoload['helper'] = array('url', 'file', 'pustaka');
 */
 $autoload['helper'] = array('url', 'file', 'pustaka');
 
@@ -133,3 +133,16 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array('ModelUser', 'ModelBuku');
+/*
+| -------------------------------------------------------------------
+|  Auto-load library files
+| -------------------------------------------------------------------
+| Prototype:
+|
+|	$autoload['library'] = array('lib1', 'lib2');
+|
+| NOTE: Do not include the "_lang" part of your file.  For example
+| "codeigniter_lang.php" would be referenced as array('codeigniter');
+|
+*/
+$autoload['library'] = array();
