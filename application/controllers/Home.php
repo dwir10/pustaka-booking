@@ -5,8 +5,11 @@ class Home extends CI_Controller
 	{ 
 		parent::__construct(); 
 		$this->load->model(['ModelBuku', 'ModelUser', 'ModelBooking']); 
+		 $this->load->library('pagination');
+        //var_dump($this->ModelBooking->kodeotomatis('pinjam'));
 	} 
 	public function index() 
+	
 	{ 
 		$data = [ 
 			'judul' => "Katalog Buku", 
